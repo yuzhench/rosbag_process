@@ -5,9 +5,11 @@ import re
 # Input directory containing the images
 # input_directory = '/home/yuzhen/Desktop/first/Azure-Kinect-Samples/opencv-kinfu-samples/build/kinfu_tag'
 
-input_directory = '/home/yuzhen/SegFormer-tensorrt/result/kinfu_tag'
+# input_directory = '/home/yuzhen/SegFormer-tensorrt/result/kinfu_tag'
+input_directory = "/home/yuzhen/Desktop/first/Azure-Kinect-Samples/opencv-kinfu-samples/build/For_KINFU_mapping_without_tape_out/kinfu_only_depth" 
 # Output video path and filename
-output_video_path = '/home/yuzhen/SegFormer-tensorrt/video_result/kinfu_segformer_tag_1*1_change_material.mp4'
+# output_video_path = '/home/yuzhen/SegFormer-tensorrt/video_result/kinfu_segformer_tag_1*1_change_material.mp4'
+output_video_path = "/home/yuzhen/Desktop/first/Azure-Kinect-Samples/opencv-kinfu-samples/build/For_KINFU_mapping_without_tape_out/kinfu_only_depth_video/video.mp4"
 
 # Get the list of image files in the input directory
 file_list = os.listdir(input_directory)
@@ -45,7 +47,7 @@ height, width, _ = first_image.shape
 
 # Define the video codec and create a VideoWriter object
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # Use appropriate codec for your desired video format
-fps = 5 # Set the frames per second
+fps = 2 # Set the frames per second
 output_video = cv2.VideoWriter(output_video_path, fourcc, fps, (width, height))
 
 # Iterate over the image files and write each frame to the video

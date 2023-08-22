@@ -1,7 +1,7 @@
 import numpy as np
 import glob
 
-input_file_direction = "/home/yuzhen/Desktop/first/Azure-Kinect-Samples/opencv-kinfu-samples/build/red"
+input_file_direction = "/home/yuzhen/Desktop/first/Azure-Kinect-Samples/opencv-kinfu-samples/build/For_KINFU_mapping_without_tape_out"
 
 file_list = glob.glob(input_file_direction+'/*_semantic.npy')
 

@@ -53,9 +53,9 @@ def main():
     mask_generator = SamAutomaticMaskGenerator(sam)
 
 
-    folder = "result"
+    folder = "Task_result"
     # path = "demo/d1_2023-06-17-15-24-41"
-    path = "class"
+    path = "For_KINFU_mapping_without_tape"
     try:
         os.makedirs(folder)
     except:
