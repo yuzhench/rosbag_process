@@ -26,3 +26,39 @@ fatal: Authentication failed for 'https://github.com/yuzhench/rosbag_process.git
 
 
 5. once you get the frames, you can put them in the same foler and share in the channel
+
+
+
+
+
+
+rosbag recording steps
+
+window1: 
+1. source devel/setup.bash
+2. roscore
+
+
+window2:
+1. source devel/setup.bash
+2. roslaunch src/Azure_Kinect_ROS_Driver/launch/driver.launch
+
+
+window3:
+1. source devel/setup.bash
+2. rosbag record (the necessary topics)
+
+topics
+/clicked_point
+/clock
+/depth_to_rgb/camera_info
+/depth_to_rgb/image_raw
+/initialpose
+/move_base_simple/goal
+/rgb/camera_info
+/rgb/image_raw
+/rosout
+/rosout_agg
+/tf
+/tf_static
+   
